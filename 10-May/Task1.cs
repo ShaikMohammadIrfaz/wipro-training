@@ -15,3 +15,18 @@ class WashingMachine : Appliance
         Console.WriteLine("Washing clothes");
     }
 }
+
+class Program
+{
+    static void Main()
+    {
+        Appliance a = new Appliance();
+        a.Operate();  
+
+        WashingMachine wm = new WashingMachine();
+        wm.Operate(); 
+
+        Appliance awm = new WashingMachine();
+        awm.Operate(); 
+    }
+}
